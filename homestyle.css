@@ -1,0 +1,432 @@
+@font-face {
+  font-family: 'myfont';
+  src: url('KosugiEDITVF.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes hovering {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+body{
+    height: 100vh;
+  width: 100vw;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0;
+    font-family: 'myfont';
+    background-color: rgb(210, 210, 210);
+    pointer-events: auto; 
+    color: #2f2d2f;
+   
+    
+}
+
+
+.main{
+    grid-column:2;
+   
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    grid-template-rows: 1fr 5fr 9fr 1fr;
+    gap:15px;
+    
+    
+    
+}
+.title{
+    grid-column: 1/3;
+    font-size: 0.8em;
+    padding-top: 20px;
+
+}
+
+.navi{
+    grid-column: 1;
+    grid-row: 2;
+
+   padding:0px;
+    
+     position:relative;
+    overflow: auto;
+   
+    border: solid 1px rgb(94, 93, 98);
+    background-color:#e7e4e4;
+    
+   
+}
+.head2{
+    background-color: #c5c2c2;
+    font-size: 1em;
+}
+h2{
+    font-size:18px;
+}
+.navi:hover .head2{
+   font-variation-settings: "EDIT" 100;
+    background-color: rgb(254, 240, 205);
+}
+.navi:hover{
+    font-variation-settings: "EDIT" 100;
+}
+.navi1{
+    display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   align-content:flex-start;
+   gap:0;
+   row-gap:-4px;
+ padding:5px;
+    column-gap:-4px;
+   line-height:0;
+}
+
+.navi img{
+  opacity:0;
+    width:50%;
+    height:auto;
+  
+  
+}
+.navi:hover .navi1{
+    background-color: rgb(254, 240, 205);
+    border: dashed 4px rgb(255, 247, 228);
+    border-radius: 5px;
+    padding:10px;
+    column-gap:0px;
+   line-height:0;
+    
+}
+.navi:hover img{
+    opacity:1;
+}
+.navi:hover h2{
+    font-variation-settings: "EDIT" 100;
+    animation: hovering 2.5s ease infinite;
+    color: #654234;
+    
+}
+.navi:hover {
+    border:none;
+     background-image: url(materials/ga02-bg-stripe.gif);
+     padding:0;
+     padding-top:20px;
+    color:rgb(109, 73, 73);
+    cursor: url(Cute-Face-2.png), pointer;
+    
+    
+}
+.status{
+    
+   grid-column: 1;
+    grid-row: 3;
+     border: solid 1px rgb(94, 93, 98);
+     background-color: #dedada;
+    padding: 15px;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size:0.8em;
+    line-height:1.3em;
+    word-spacing: 0.3em;
+    position:relative;
+    overflow: visible;
+    padding-top:0;
+   
+     
+    flex-grow: 0;
+    
+}
+.status:hover .status1{
+    border-radius:9px;
+background-color: rgb(244, 228, 183);
+padding: 10px;
+}   
+.status1{
+    padding:0;
+   
+    flex-grow: 0;
+    
+}
+
+.status:hover{
+    color: #5c3e38;
+    padding:15px;
+     
+     background-image: url(materials/pearl1a_pink.gif);
+    border-radius: 5;
+    border: dotted 4px rgb(255, 242, 246);
+    cursor: url(Cute-Face-2.png), pointer;
+}
+.status:hover .links{
+    border-color:rgb(255, 149, 156);
+    cursor: url(Cute-Face-2.png), pointer;
+}
+.status:hover .head2{
+   font-variation-settings: "EDIT" 100;
+    background-color: rgb(244, 228, 183);
+    padding-left:10px;
+    
+}
+
+
+
+.status:hover h2{
+    font-variation-settings: "EDIT" 100;
+    animation: hovering 2.5s ease infinite;
+    
+}
+a:hover{
+    font-variation-settings: "EDIT" 100;
+    cursor: url(Cute-Face-2.png), pointer;
+}
+
+a{
+    color:#656581;
+    
+}
+.status:hover a{
+    color:#8b2440;
+    text-decoration: none;
+}
+
+
+
+
+.links{
+    padding:7px;
+    border-bottom: dotted 2px;
+   text-align:right;
+   display:flex;
+   justify-content:center;
+   gap:5px;
+   
+   align-items: space-between;
+}
+.links img{
+    opacity: 0;
+    height: 60%;
+    width:auto;
+  
+}
+.links:hover{
+
+    border:none;
+    border-radius: 0.7em;
+    background-color: rgb(255, 239, 237);
+    
+    
+}
+.links:hover img{
+    opacity:1;
+
+
+}
+.welcoming .head2{
+    background-color:#c1c1c1;
+}
+.welcome{
+     grid-column: 2;
+    grid-row: 2;
+     border: solid 1px rgb(94, 93, 98);
+    background-color:#e7e4e4;
+    padding:5px;
+    position:relative; 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size:1em;
+    line-height: 0;
+    max-height: 100%;
+    min-height: 0;
+    
+    gap:20px;
+
+     max-width: 100%;
+    flex-grow: 0;
+   
+}
+.welcoming{
+    position:relative;
+}
+.welcoming img{
+    opacity:0;
+    position:absolute;
+    left:100px;
+    top:-16px;
+
+}
+
+.welcome:hover .welcoming img{
+    opacity:1;
+    width:40%;
+}
+.welcome:hover .head2{
+    opacity:0;
+}
+
+.welcome:hover {
+ cursor: url(Cute-Face-2.png), pointer;
+ background-color: #f6f3d1;
+ border-radius: 5px;
+ border:dotted 5px #eebbe4;
+  
+   
+}
+.welcome:hover .ptext{
+      min-height: 0;
+    align-self: flex-start;
+    border-radius:20px;
+    border:2px solid rgb(188, 172, 172);
+    background-color: #fee4fa;
+    color:rgb(149, 116, 116);
+    padding:5px;
+    padding-top:0;
+     font-variation-settings: "EDIT" 100;
+    animation: hovering 2.5s ease infinite;
+  
+
+  
+  
+}
+.corner{
+    display:flex;
+    gap: 15px;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    justify-content:start;
+    max-width: 100%;
+    flex-grow: 0;
+    padding-left:10px;
+   
+    
+}
+.corner img{
+   flex: 0 1 auto;
+   height:30px;
+
+}
+.corner img:hover{
+    animation:hovering 2s infinite;
+}
+.text{
+     grid-column: 2;
+    grid-row: 3;
+     border: solid 1px rgb(94, 93, 98);
+    background-color:#e7e4e4;
+    padding: 25px;
+    word-spacing: 0.3em;
+    line-height:1.4em;
+    font-size: 0.9em;
+    letter-spacing: 0.02em; 
+    
+overflow-y: scroll;
+}
+
+.text:hover{
+    background-image: url(materials/3.gif);
+    cursor: url(Cute-Face-2.png), pointer;
+    font-variation-settings: "EDIT" 20;
+border: rgb(240, 240, 238) solid 2px;
+    border-radius: 8px;
+
+
+
+}
+.textb{
+    opacity:0;
+}
+.text:hover .textb{
+    opacity:1;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    
+}
+
+.text:hover .text1{
+    cursor: url(Cute-Face-2.png), pointer;
+    font-variation-settings: "EDIT" 20;
+    background-color: rgb(239, 218, 206);
+    border: rgb(240, 240, 238) solid 2px;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+.text2:hover{
+     cursor: url(Cute-Angry-Face.png), pointer;
+    animation: change 3s ease-in-out;
+    animation-iteration-count: infinite;
+   color: #4c352b;
+}
+
+.text3:hover{
+    cursor: url(Cute-Face-1.png), pointer;
+    animation: change 3s ease-in-out;
+    animation-iteration-count: infinite;
+     color: #3e3836;
+
+}
+.text4:hover{
+    cursor: url(Cute-Face-2.png), pointer;
+     animation: change 3s ease-in-out;
+     animation-iteration-count: infinite;
+      color: #4a342c;
+}
+.text5:hover{
+    cursor: url(Cute-Face-3.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #4e3a33;
+     animation-iteration-count: infinite;
+}
+.text6:hover{
+    cursor: url(Cute-Face-4.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #543e37;
+     animation-iteration-count: infinite;
+}
+.text7:hover{
+    cursor: url(Cute-Face-5.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #62463b;
+     animation-iteration-count: infinite;
+}
+.text8:hover{
+    cursor: url(Winking-Face.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #573f3b;
+     animation-iteration-count: infinite;
+}
+.text9:hover{
+    cursor: url(Cute-Angry-Face.png), pointer;
+     animation: change 3s ease-in-out;
+      color: #64433e;
+      animation-iteration-count: infinite;
+}
+.text10:hover{
+    cursor: url(Cute-Face-1.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #5c3e38;
+     animation-iteration-count: infinite;
+}
+.text11:hover{
+    cursor: url(Cute-Face-2.png), pointer;
+     animation: change 3s ease-in-out;
+     color: #5c3e38;
+     animation-iteration-count: infinite;
+}
+@keyframes change{
+      0% { font-variation-settings: "EDIT" 30; }
+ 
+  100% { font-variation-settings: "EDIT" 100; }
+}
+
+
